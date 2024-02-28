@@ -9,7 +9,9 @@ function isMobileDevice() {
 // Function to display a prompt to switch to desktop mode
 function showDesktopPrompt() {
   if (isMobileDevice()) {
-    var response = confirm("It Only Run On Desktop !");
+    var response = confirm(
+      "For better experience, switch to desktop mode. Do you want to proceed?"
+    );
     if (response == true) {
       // Redirect to desktop version of the site
       window.location.href = "https://jiteshthakurweb.vercel.app";
